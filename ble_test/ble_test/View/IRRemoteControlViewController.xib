@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IRRemoteControlViewController" customModule="ble_test" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="center" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qd-bz-5Xw">
+                    <rect key="frame" x="157" y="358" width="100" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Oyc-1j-lYS"/>
+                        <constraint firstAttribute="height" constant="50" id="Xbz-iz-6JG"/>
+                    </constraints>
+                    <state key="normal" image="angle-up">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Yj-0d-Qdk">
+                    <rect key="frame" x="55" y="398" width="50" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="RfV-fZ-8Fo"/>
+                        <constraint firstAttribute="height" constant="100" id="qME-2y-7rR"/>
+                    </constraints>
+                    <state key="normal" image="angle-left"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tcu-mF-EOh">
+                    <rect key="frame" x="254" y="398" width="68" height="140"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="angle-right"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="2Yj-0d-Qdk" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="PZJ-en-4lP"/>
+                <constraint firstAttribute="trailing" secondItem="2Yj-0d-Qdk" secondAttribute="trailing" constant="309" id="goR-gt-zjK"/>
+                <constraint firstItem="6qd-bz-5Xw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="314" id="j5x-hl-s3w"/>
+                <constraint firstItem="6qd-bz-5Xw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wNE-tc-Krf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="angle-left" width="595" height="842"/>
+        <image name="angle-right" width="595" height="842"/>
+        <image name="angle-up" width="842" height="595"/>
+    </resources>
+</document>
